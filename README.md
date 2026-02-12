@@ -53,4 +53,4 @@ python main.py
 pip install flask watchdog sentence-transformers scikit-learn PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
 
 ### 3.Run the System:
-pythob main.py
+python main.py
