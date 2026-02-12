@@ -1,5 +1,4 @@
 # Team-Kautilya
-
 # SEFS | Semantic Entropy File System
 ### *Neural Intelligence Interface & Dynamic Security Engine*
 
@@ -7,50 +6,68 @@
 
 ---
 
-## 🚀 Unique Features
+## 🚀 Project Description
+The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter." Instead of manually sorting files, SEFS uses Natural Language Processing (NLP) to "read" your documents and images, physically organizing them into AI-named folders in your OS. It features a futuristic **Neural HUD** that visualizes your data as a living network, complete with real-time file monitoring and a "Neural Handshake" security protocol.
 
-### 🧠 Semantic Intelligence Engine
-* **Contextual Clustering:** Uses **MPNet** (`all-mpnet-base-v2`) to understand the meaning of files, grouping them using **K-Means Clustering**.
-* **Smart Folder Naming:** Automatically generates descriptive folder names in the OS based on cluster themes.
-* **Multi-Modal OCR:** Extracts and clusters text from images (PNG, JPG) using **Tesseract OCR**.
-* **AI Summarization:** Instant 2-sentence semantic insights for every file powered by **Sumy**.
-
-### 🔒 Dynamic Security Registry
-* **Right-Click Privacy:** Toggle "Locked" status on any node directly from the UI.
-* **Neural Handshake:** Persistent security via `security_registry.json`. Locked files block AI summaries and OS access until the correct key is provided.
-* **Visual Status:** Real-time color coding—Red for Locked (🔒), Green for Public nodes.
-
-### 🌐 Advanced Visualization
-* **Neural Flow Animation:** Moving pulses of light visualize data flow from the core to file clusters.
-* **Interactive HUD:** A high-tech HUD-style sidebar displaying file paths, metadata, and AI analysis.
-* **Real-Time Watcher:** The UI updates instantly as you drop or remove files from your computer.
+### Key Unique Features:
+* **Semantic Intelligence:** Groups files (PDF, DOCX, TXT, PPTX) based on actual meaning using **MPNet Embeddings**.
+* **Multi-Modal Vision:** Integrated **Tesseract OCR** allows the system to extract text from images (PNG, JPG) and cluster them alongside documents.
+* **Smart Folder Naming:** Dynamically generates descriptive folder names (e.g., `MACHINE_LEARNING_DATA`) based on cluster content.
+* **Dynamic Security Registry:** A right-click interface to lock/unlock files via a persistent JSON-based security handshake.
+* **Neural Flow Animation:** A living UI that visualizes data pulses moving through the system using Cytoscape.js.
 
 ---
 
-## 🛠️ Technical Stack
-* **Backend:** Python (Flask), Watchdog
-* **AI/ML:** Sentence-Transformers (MPNet), Scikit-Learn (K-Means), Tesseract OCR, Sumy
-* **Frontend:** Cytoscape.js, HTML5/CSS3 (Neon HUD Theme)
-* **Database:** JSON-based Security Registry
+## 🛠️ Tech Stack
+| Category | Technology |
+| :--- | :--- |
+| **Backend** | Python, Flask |
+| **Real-time Monitoring** | Watchdog API |
+| **AI Models** | MPNet (`all-mpnet-base-v2`), HDBSCAN Clustering |
+| **Vision (OCR)** | Tesseract OCR, OpenCV |
+| **Summarization** | Sumy (LSA Summarizer) |
+| **Frontend** | Cytoscape.js, HTML5, CSS3 (Neon-HUD Aesthetic) |
 
 ---
-## 💻 Installation & Setup
+
+## 📂 Project Structure
+```text
+SEFS-Neural-Interface/
+├── main.py              # Flask server & Real-time Watchdog logic
+├── embeddings.py        # MPNet semantic vector generation
+├── clustering.py        # HDBSCAN unsupervised clustering logic
+├── organizer.py         # AI folder naming & physical file movement
+├── file_reader.py       # Multi-format text extraction & OCR
+├── graph_generator.py   # Mapping intelligence to Neural Graph JSON
+├── security_registry.json # Persistent security database
+├── root_folder/         # The target directory monitored by AI
+└── frontend/
+    └── index.html       # The Neural HUD Interface
+
+
+---
+
+## ⚙️ Installation & Dependencies
 
 ### 1. Prerequisites
 * **Python 3.8+**
-* **Tesseract OCR Engine:** Ensure Tesseract is installed on your machine and added to your System PATH.
+* **Tesseract OCR Engine:** [Download & Install Tesseract](https://github.com/UB-Mannheim/tesseract/wiki).  
+  > **⚠️ Crucial:** Add the installation path to your **System Environment Variables (PATH)** so Python can access the OCR engine.
 
-## 🚀 Getting Started
-
-Follow these steps to initialize the SEFS Neural Engine and access the interface:
-
-### 1. Initialize the System
-Open your terminal or command prompt, navigate to the project directory, and execute the main controller:
-python main.py
-
-### 2. Install Dependencies
+### 2. Install Python Packages
+Execute the following command to install the required neural and system libraries:
 ```bash
-pip install flask watchdog sentence-transformers scikit-learn PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
+pip install flask watchdog sentence-transformers hdbscan PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
 
-### 3.Run the System:
+
+
+---
+
+## 🚀 How to Run
+
+Follow these steps to initialize the SEFS Neural Engine and start organizing your data.
+
+### 1. Initialize the Engine
+Open your terminal or command prompt, navigate to the project directory, and execute the main controller:
+```bash
 python main.py
