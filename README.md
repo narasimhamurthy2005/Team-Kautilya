@@ -34,7 +34,6 @@
 * **Database:** JSON-based Security Registry
 
 ---
-
 ## 💻 Installation & Setup
 
 ### 1. Prerequisites
@@ -52,3 +51,6 @@ python main.py
 ### 2. Install Dependencies
 ```bash
 pip install flask watchdog sentence-transformers scikit-learn PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
+
+### 3.Run the System:
+pythob main.py
