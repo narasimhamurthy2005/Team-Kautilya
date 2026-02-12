@@ -1,4 +1,3 @@
-# Team Kautilya
 # SEFS | Semantic Entropy File System
 ### *Neural Intelligence Interface & Dynamic Security Engine*
 
@@ -12,7 +11,7 @@ The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter."
 ### Key Unique Features:
 * **Semantic Intelligence:** Groups files (PDF, DOCX, TXT, PPTX) based on actual meaning using **MPNet Embeddings**.
 * **Multi-Modal Vision:** Integrated **Tesseract OCR** allows the system to extract text from images (PNG, JPG) and cluster them alongside documents.
-* **Smart Folder Naming:** Dynamically generates descriptive folder names based on cluster content.
+* **Smart Folder Naming:** Dynamically generates descriptive folder names (e.g., `MACHINE_LEARNING_DATA`) based on cluster content.
 * **Dynamic Security Registry:** A right-click interface to lock/unlock files via a persistent JSON-based security handshake.
 * **Neural Flow Animation:** A living UI that visualizes data pulses moving through the system using Cytoscape.js.
 
@@ -26,7 +25,7 @@ The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter."
 | **AI Models** | MPNet (`all-mpnet-base-v2`), HDBSCAN Clustering |
 | **Vision (OCR)** | Tesseract OCR, OpenCV |
 | **Summarization** | Sumy (LSA Summarizer) |
-| **Frontend** | Cytoscape.js, HTML5, CSS3 |
+| **Frontend** | Cytoscape.js, HTML5, CSS3 (Neon-HUD Aesthetic) |
 
 ---
 
@@ -35,7 +34,7 @@ The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter."
 SEFS-Neural-Interface/
 ├── main.py              # Flask server & Real-time Watchdog logic
 ├── embeddings.py        # MPNet semantic vector generation
-├── clustering.py        # Unsupervised clustering logic
+├── clustering.py        # HDBSCAN unsupervised clustering logic
 ├── organizer.py         # AI folder naming & physical file movement
 ├── file_reader.py       # Multi-format text extraction & OCR
 ├── graph_generator.py   # Mapping intelligence to Neural Graph JSON
@@ -45,21 +44,29 @@ SEFS-Neural-Interface/
     └── index.html       # The Neural HUD Interface
 
 
+---
+
 ## ⚙️ Installation & Dependencies
-1. Prerequisites
-Python 3.8+
 
-Tesseract OCR Engine: Download & Install Tesseract.
+### 1. Prerequisites
+* **Python 3.8+**
+* **Tesseract OCR Engine:** [Download & Install Tesseract](https://github.com/UB-Mannheim/tesseract/wiki).  
+  > **⚠️ Crucial:** Add the installation path to your **System Environment Variables (PATH)** so Python can access the OCR engine.
 
-⚠️ Crucial: Add the installation path to your System Environment Variables (PATH) so Python can access the OCR engine.
-
-2. Install Python Packages
+### 2. Install Python Packages
 Execute the following command to install the required neural and system libraries:
-
+```bash
 pip install flask watchdog sentence-transformers hdbscan PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
 
-🚀 How to Run
-1. Initialize the Engine
-Open your terminal or command prompt, navigate to the project directory, and execute the main controller:
 
+
+---
+
+## 🚀 How to Run
+
+Follow these steps to initialize the SEFS Neural Engine and start organizing your data.
+
+### 1. Initialize the Engine
+Open your terminal or command prompt, navigate to the project directory, and execute the main controller:
+```bash
 python main.py
