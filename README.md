@@ -30,7 +30,7 @@ The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter."
 ---
 
 ## 📂 Project Structure
-``text
+`````text
 SEFS-Neural-Interface/
 ├── main.py              # Flask server & Real-time Watchdog logic
 ├── embeddings.py        # MPNet semantic vector generation
