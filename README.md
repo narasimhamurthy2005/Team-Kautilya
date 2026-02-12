@@ -30,7 +30,7 @@ The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter."
 ---
 
 ## 📂 Project Structure
-`````text
+```text
 SEFS-Neural-Interface/
 ├── main.py              # Flask server & Real-time Watchdog logic
 ├── embeddings.py        # MPNet semantic vector generation
@@ -48,11 +48,9 @@ SEFS-Neural-Interface/
 
 ## ⚙️ Installation & Dependencies
 
-``
-
 ### 1. Install Python Packages
 Execute the following command to install the required neural and system libraries:
-``
+```bash
 pip install flask watchdog sentence-transformers hdbscan PyPDF2 python-docx python-pptx sumy pytesseract opencv-python tqdm
 
 
@@ -65,5 +63,5 @@ Follow these steps to initialize the SEFS Neural Engine and start organizing you
 
 ### 1. Initialize the Engine
 Open your terminal or command prompt, navigate to the project directory, and execute the main controller:
-
+```bash
 python main.py
