@@ -4,6 +4,9 @@
 **SEFS** is a next-generation file management system that transforms a static directory into a "Living Brain." By leveraging deep semantic analysis, it automatically organizes files based on context, generates AI-driven summaries, and implements a dynamic security layer for sensitive data.
 
 ---
+## 🎥 Project Demo
+
+[![Watch the video]](https://drive.google.com/file/d/1pvg6uJsi83zc3yxA5o2GRBBc4n-2jD1g/view?usp=sharing)
 
 ## 🚀 Project Description
 The Semantic Entropy File System (SEFS) solves the problem of "Digital Clutter." Instead of manually sorting files, SEFS uses Natural Language Processing (NLP) to "read" your documents and images, physically organizing them into AI-named folders in your OS. It features a futuristic **Neural HUD** that visualizes your data as a living network, complete with real-time file monitoring and a "Neural Handshake" security protocol.
